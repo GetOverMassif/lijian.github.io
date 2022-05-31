@@ -1,7 +1,7 @@
 ---
 title: "📜论文阅读 | "
-date: 2022-05-31T01:37:56+08:00
-lastmod: 2022-05-31T01:37:56+08:00
+date: 2022-06-01
+lastmod: 2022-06-01
 draft: true
 tags: ["scene graph", "loop closure"]
 categories: ["slam", "论文阅读"]
@@ -13,7 +13,7 @@ author: "lijian"
 >
 >MIT 信息与决策系统实验室(LIDS) [实验室主页](https://lids.mit.edu/)
 
-【Thinking】论文四问
+## 【Thinking】论文四问
 
 - <font color=red>1. 针对什么问题？</font>
   - 
