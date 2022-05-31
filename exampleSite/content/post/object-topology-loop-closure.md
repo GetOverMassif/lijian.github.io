@@ -11,8 +11,7 @@ author: "lijian"
 >**面向更鲁棒闭环的拓扑可感的物体级语义建图**
 >Lin S, Wang J, Xu M, et al. [Topology Aware Object-Level Semantic Mapping Towards More Robust Loop Closure](https://www.semanticscholar.org/paper/Topology-Aware-Object-Level-Semantic-Mapping-More-Lin-Wang/3701cbbfa25e954ce5cdf0c40cfa02fd9e745900)[J]. IEEE Robotics and Automation Letters, 2021, 6(4): 7041-7048.（RAL 2021）
 
-【Thinking】论文四问（学自[博客](https://wym.netlify.app/2020-05-05-cluster-vo/)）
-<u1>
+## 【Thinking】论文四问
 - <font color=red>1. 针对什么问题？</font>
   - 
 - <font color=red>2. 采用什么方法？</font>
@@ -21,7 +20,7 @@ author: "lijian"
   - 
 - <font color=red>4. 存在什么不足？</font>
   - 
-</u1>
+
 ## 0. 摘要
 
 使用RGB-D相机，提出了一种新的基于物体建模和语义图结构匹配的回环闭合方法，物体级特征使用体素和长方体建立，并且环境被进一步表示为具有拓扑信息的语义图结构，在此基础上，提出了一种基于编辑距离的高级图结构匹配方法，实现鲁棒位置识别。最后使用语义地图的物体对齐进行回环校正。
