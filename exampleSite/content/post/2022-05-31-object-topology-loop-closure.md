@@ -97,6 +97,10 @@ author: "lijian"
   - 支持向量的编辑距离满足一定约束，则认为是一个回环。
 
 - C. 回环校正
+  $$
+  e\left(O_{a i}, O_{b i}\right)=\left[\log \left(\left(T_{c}^{\prime}\right)^{-1} T_{c} T_{a i} T_{b i}^{-1}\right)_{\mathfrak{s e} 3}^{\vee} \quad \mathbf{d}_{a i}-\mathbf{d}_{b i}\right]
+  $$
+  
 
 ---
 
