@@ -10,7 +10,7 @@ weight: 50
 
 ​		机器人技术专业在读硕士研究生，感兴趣方向为视觉SLAM。
 
-​		E-mail：massif_li@qq.com  Github：[GetOverMassif](https://github.com/GetOverMassif)  知乎：[山丘](https://www.zhihu.com/people/shan-qiu-38-3)  CSDN  [Massif_Li](https://blog.csdn.net/lj164567487?spm=1010.2135.3001.5343)  
+​		E-mail：[massif_li@qq.com](massif_li@qq.com)  Github：[GetOverMassif](https://github.com/GetOverMassif)  知乎：[山丘](https://www.zhihu.com/people/shan-qiu-38-3)  CSDN  [Massif_Li](https://blog.csdn.net/lj164567487?spm=1010.2135.3001.5343)  
 
 **关于博客**
 
