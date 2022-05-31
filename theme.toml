@@ -1,7 +1,7 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Even"
+name = "小李 KeepForward!"
 license = "MIT"
 licenselink = "https://github.com/olOwOlo/hugo-theme-even/blob/master/LICENSE.md"
 description = "A super concise theme for Hugo"
@@ -11,8 +11,8 @@ features = ["responsive", "blog", "simple", "clean", "highlight.js", "syntax hig
 min_version = "0.60.0"
 
 [author]
-  name = "olOwOlo"
-  homepage = "https://github.com/olOwOlo"
+  name = "li"
+  homepage = "https://github.com/GetOverMassif"
 
 # If porting an existing theme
 [original]
