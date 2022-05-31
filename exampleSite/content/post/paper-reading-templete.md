@@ -13,7 +13,7 @@ author: "lijian"
 >
 >MIT 信息与决策系统实验室(LIDS) [实验室主页](https://lids.mit.edu/)
 
-【Thinking】论文四问
+## 【Thinking】论文四问
 
 - <font color=red>1. 针对什么问题？</font>
   - 

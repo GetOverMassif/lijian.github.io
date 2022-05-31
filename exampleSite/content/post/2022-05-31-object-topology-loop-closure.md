@@ -9,9 +9,13 @@ author: "lijian"
 ---
 
 >**面向更鲁棒闭环的拓扑可感的物体级语义建图**
+>
 >Lin S, Wang J, Xu M, et al. [Topology Aware Object-Level Semantic Mapping Towards More Robust Loop Closure](https://www.semanticscholar.org/paper/Topology-Aware-Object-Level-Semantic-Mapping-More-Lin-Wang/3701cbbfa25e954ce5cdf0c40cfa02fd9e745900)[J]. IEEE Robotics and Automation Letters, 2021, 6(4): 7041-7048.（RAL 2021）
+>
+>中国科学技术大学自动化系 [网页](http://en.auto.ustc.edu.cn/)
 
 ## 【Thinking】论文四问
+
 - <font color=red>1. 针对什么问题？</font>
   - 
 - <font color=red>2. 采用什么方法？</font>

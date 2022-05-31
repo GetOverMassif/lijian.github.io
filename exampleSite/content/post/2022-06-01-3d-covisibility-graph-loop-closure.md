@@ -9,9 +9,12 @@ author: "lijian"
 ---
 
 >**面向更鲁棒闭环的拓扑可感的物体级语义建图**
+>
 >Qian Z, Fu J, Xiao J. [Towards Accurate Loop Closure Detection in Semantic SLAM with 3D Semantic Covisibility Graphs](extension://idghocbbahafpfhjnfhpbfbmpegphmmp/assets/pdf/web/viewer.html?file=https%3A%2F%2Ffujie.ece.ufl.edu%2Fwp-content%2Fuploads%2Fsites%2F79%2F2022%2F02%2FSemanticSLAM-Covisibility-RAL2022.pdf)[J]. IEEE Robotics and Automation Letters, 2022.（**RAL 2022**）
+>
+>美国 伍斯特理工学院 机器人工程系 [主页](https://www.wpi.edu/academics/departments/robotics-engineering)
 
-【Thinking】论文四问（学自[博客](https://wym.netlify.app/2020-05-05-cluster-vo/)）
+## 【Thinking】论文四问
 
 - <font color=red>1. 针对什么问题？</font>
   - 
