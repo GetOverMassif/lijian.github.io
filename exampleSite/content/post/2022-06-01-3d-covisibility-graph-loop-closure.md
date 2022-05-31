@@ -8,7 +8,7 @@ categories: ["slam", "论文阅读"]
 author: "lijian"
 ---
 
->**面向更鲁棒闭环的拓扑可感的物体级语义建图**
+>**利用三维语义共视图实现语义SLAM中闭环的精准检测**
 >
 >Qian Z, Fu J, Xiao J. [Towards Accurate Loop Closure Detection in Semantic SLAM with 3D Semantic Covisibility Graphs](extension://idghocbbahafpfhjnfhpbfbmpegphmmp/assets/pdf/web/viewer.html?file=https%3A%2F%2Ffujie.ece.ufl.edu%2Fwp-content%2Fuploads%2Fsites%2F79%2F2022%2F02%2FSemanticSLAM-Covisibility-RAL2022.pdf)[J]. IEEE Robotics and Automation Letters, 2022.（**RAL 2022**）
 >
@@ -16,13 +16,13 @@ author: "lijian"
 
 ## 【Thinking】论文四问
 
-- <font color=red>1. 针对什么问题？</font>
+- 1. <font color=red>针对什么问题？</font>
   - 
-- <font color=red>2. 采用什么方法？</font>
+- 2. <font color=red>采用什么方法？</font>
   - 
-- <font color=red>3. 达到什么效果？</font>
+- 3. <font color=red>达到什么效果？</font>
   - 
-- <font color=red>4. 存在什么不足？</font>
+- 4. <font color=red>存在什么不足？</font>
   - 
 
 ## 0. 摘要

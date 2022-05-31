@@ -16,13 +16,13 @@ author: "lijian"
 
 ## 【Thinking】论文四问
 
-- 1.<font color=red> 针对什么问题？</font>
+- 1. <font color=red>针对什么问题？</font>
   - 
-- 2.<font color=red> 采用什么方法？</font>
+- 2. <font color=red>采用什么方法？</font>
   - 
-- 3.<font color=red> 达到什么效果？</font>
+- 3. <font color=red>达到什么效果？</font>
   - 
-- 4.<font color=red> 存在什么不足？</font>
+- 4. <font color=red>存在什么不足？</font>
   - 
 
 ## 0. 摘要
