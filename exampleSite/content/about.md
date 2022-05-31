@@ -1,21 +1,22 @@
 ---
 title: "About"
-date: 2017-08-20T21:38:52+08:00
-lastmod: 2017-08-28T21:41:52+08:00
+date: 2022-05-31T21:38:52+08:00
+lastmod: 2022-05-31T21:41:52+08:00
 menu: "main"
 weight: 50
-
 ---
 
-Hugo is a static site engine written in Go.
+**About me**
 
+​		机器人技术专业在读硕士研究生，感兴趣方向为视觉SLAM。
 
-It makes use of a variety of open source projects including:
+​		E-mail : massif_li@qq.com   Github : [GetOverMassif](https://github.com/GetOverMassif)   知乎 : [zhihu](https://www.zhihu.com/people/shan-qiu-38-3)   CSDN : [Massif_Li](https://blog.csdn.net/lj164567487?spm=1010.2135.3001.5343)
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+**关于博客**
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+​		希望有一个方便记录和访问的站点，及时保存自己的学习笔记，同时也时时整理思路，受到了同样做SLAM的前辈[wuyanmin的站点](https://wym.netlify.app/about/)的影响，决定自己也仿照建立一个。
+
+**参考资源**
+
+​		hugo模板 [even](https://github.com/olOwOlo/hugo-theme-even)，[Demo页面](https://hugo-theme-even.netlify.app/)
 

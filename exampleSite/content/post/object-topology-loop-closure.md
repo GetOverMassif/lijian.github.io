@@ -1,36 +1,44 @@
 ---
-title: "论文阅读 | 面向更鲁棒闭环的拓扑可感的物体级语义建图"
+title: "📜论文阅读 | 面向更鲁棒闭环的拓扑可感的物体级语义建图"
 date: 2022-05-31T01:37:56+08:00
 lastmod: 2022-05-31T01:37:56+08:00
 draft: false
-tags: ["preview", "中文", "tag-1"]
-categories: ["slam"]
+tags: ["loop closure", "object"]
+categories: ["slam", "论文阅读"]
 author: "lijian"
-
-contentCopyright: '<a rel="license noopener" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" target="_blank">Creative Commons Attribution-ShareAlike License</a>'
-
-
 ---
 
 >**面向更鲁棒闭环的拓扑可感的物体级语义建图**
->Lin S, Wang J, Xu M, et al. Topology Aware Object-Level Semantic Mapping Towards More Robust Loop Closure[J]. IEEE Robotics and Automation Letters, 2021, 6(4): 7041-7048.（RAL 2021）
+>Lin S, Wang J, Xu M, et al. [Topology Aware Object-Level Semantic Mapping Towards More Robust Loop Closure](https://www.semanticscholar.org/paper/Topology-Aware-Object-Level-Semantic-Mapping-More-Lin-Wang/3701cbbfa25e954ce5cdf0c40cfa02fd9e745900)[J]. IEEE Robotics and Automation Letters, 2021, 6(4): 7041-7048.（RAL 2021）
+
+【Thinking】论文四问（学自[博客](https://wym.netlify.app/2020-05-05-cluster-vo/)）
+
+- <font color=red>1. 针对什么问题？</font>
+  - 
+- <font color=red>2. 采用什么方法？</font>
+  - 
+- <font color=red>3. 达到什么效果？</font>
+  - 
+- <font color=red>4. 存在什么不足？</font>
+  - 
 
 ## 0. 摘要
 
 使用RGB-D相机，提出了一种新的基于物体建模和语义图结构匹配的回环闭合方法，物体级特征使用体素和长方体建立，并且环境被进一步表示为具有拓扑信息的语义图结构，在此基础上，提出了一种基于编辑距离的高级图结构匹配方法，实现鲁棒位置识别。最后使用语义地图的物体对齐进行回环校正。
 实验结果标明，该方法实现了无视点约束的全向闭环，相比基于环境外观的方法，有较强的鲁棒性。
 
+---
+
 ## 1. Introduction
 
 - 人类基于环境物体布局来识别环境，在短时间内判断当前环境是否熟悉，受此启发，提出一种基于拓扑感知的物体级语义建图的闭环方法，能够实现大视点变化观察同一场景时，检测闭环并进行匹配和对齐。贡献如下：
 
   - 提出由地图点、体素和长方体组成的多粒度语义建图框架。
+- 提取物体的语义、大小、颜色分布和拓扑等多个信息作为描述符，实现物体间精确关联。
+  - 一种基于<font color=red>**语义图结构匹配的回环检测**</font>方法，对视点和场景外观的变化具有鲁棒性
+- 一种基于物体对齐的回环校正方法，可以精确计算漂移误差
 
-  - 提取物体的语义、大小、颜色分布和拓扑等多个信息作为描述符，实现物体间精确关联。
-
-  - 一种基于语义图结构匹配的回环检测方法，对视点和场景外观的变化具有鲁棒性
-
-  - 一种基于物体对齐的回环校正方法，可以精确计算漂移误差
+---
 
 ## 2. Related Work
 
@@ -43,6 +51,8 @@ contentCopyright: '<a rel="license noopener" href="https://en.wikipedia.org/wiki
   - 有些研究从图像中抽取局部特征，如SIFT[15]、ORB[5]等作为图像的抽象描述。或从整个图像提取全局特征，如GIST[16]，来实现场景描述。也有方法从图像多个局部区域提取全局特征，形成地点的鲁棒表示[17]。[10]中首次提出使用物体实现视图不变性的回环闭合。
 
   - 为了应对场景遮挡、布局变化、重复对象等因素，提取语义、颜色、拓扑等物体的各种信息，以实现物体的精准匹配和闭环检测。
+
+---
 
 ## 3. Object SLAM
 
@@ -61,6 +71,8 @@ contentCopyright: '<a rel="license noopener" href="https://en.wikipedia.org/wiki
     - 颜色：将物体图像转换成HSV颜色空间，然后计算待匹配图像的颜色直方图，形成归一化特征向量，相关系数大于0.5时，认为匹配成功
 
     - 拓扑：使用随机游走符描述符[21]提取物体领域拓扑信息，匹配阈值设置为实验中探索次数的0.5倍。
+
+---
 
 ## 4. 使用语义图结构的回环闭合
 
@@ -83,6 +95,8 @@ contentCopyright: '<a rel="license noopener" href="https://en.wikipedia.org/wiki
 
 - C. 回环校正
 
+---
+
 ## 5. Experiment
 
 - A. 数据集
@@ -90,6 +104,8 @@ contentCopyright: '<a rel="license noopener" href="https://en.wikipedia.org/wiki
 - C. 回环检测表现
 - D. 定位准确度
 - E. 时间分析
+
+---
 
 ## 6. Conclusion
 
