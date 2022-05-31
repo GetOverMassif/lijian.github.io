@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>📜论文阅读 | 面向更鲁棒闭环的拓扑可感的物体级语义建图 - 小李的博客</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="lijian" /><meta name="description" content="面向更鲁棒闭环的拓扑可感的物体级语义建图 Lin S, Wang J, Xu M, et al. Topology Aware Object-Level Semantic Mapping Towards More Robust Loop Closure[J]. IEEE Robotics and Automation Letters, 2021, 6(4): 7041-7048.（RAL 2021） 中国科学技术" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.99.1 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/2022-05-31-object-topology-loop-closure/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="📜论文阅读 | 面向更鲁棒闭环的拓扑可感的物体级语义建图" />
+<meta property="og:description" content="面向更鲁棒闭环的拓扑可感的物体级语义建图 Lin S, Wang J, Xu M, et al. Topology Aware Object-Level Semantic Mapping Towards More Robust Loop Closure[J]. IEEE Robotics and Automation Letters, 2021, 6(4): 7041-7048.（RAL 2021） 中国科学技术" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/2022-05-31-object-topology-loop-closure/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-05-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-05-31T00:00:00+00:00" />
+
+<meta itemprop="name" content="📜论文阅读 | 面向更鲁棒闭环的拓扑可感的物体级语义建图">
+<meta itemprop="description" content="面向更鲁棒闭环的拓扑可感的物体级语义建图 Lin S, Wang J, Xu M, et al. Topology Aware Object-Level Semantic Mapping Towards More Robust Loop Closure[J]. IEEE Robotics and Automation Letters, 2021, 6(4): 7041-7048.（RAL 2021） 中国科学技术"><meta itemprop="datePublished" content="2022-05-31T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-05-31T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1600">
+<meta itemprop="keywords" content="loop closure,object," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="📜论文阅读 | 面向更鲁棒闭环的拓扑可感的物体级语义建图"/>
+<meta name="twitter:description" content="面向更鲁棒闭环的拓扑可感的物体级语义建图 Lin S, Wang J, Xu M, et al. Topology Aware Object-Level Semantic Mapping Towards More Robust Loop Closure[J]. IEEE Robotics and Automation Letters, 2021, 6(4): 7041-7048.（RAL 2021） 中国科学技术"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">小李 KeepForward!</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">小李 KeepForward!</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">📜论文阅读 | 面向更鲁棒闭环的拓扑可感的物体级语义建图</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-05-31 </span>
+        <div class="post-category">
+            <a href="/categories/slam/"> slam </a>
+            <a href="/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"> 论文阅读 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#thinking论文四问">【Thinking】论文四问</a></li>
+        <li><a href="#1font-colorred-针对什么问题font">1.<font color=red> 针对什么问题？</font></a></li>
+        <li><a href="#2font-colorred-采用什么方法font">2.<font color=red> 采用什么方法？</font></a></li>
+        <li><a href="#3font-colorred-达到什么效果font">3.<font color=red> 达到什么效果？</font></a></li>
+        <li><a href="#4font-colorred-存在什么不足font">4.<font color=red> 存在什么不足？</font></a></li>
+        <li><a href="#0-摘要">0. 摘要</a></li>
+        <li><a href="#1-introduction">1. Introduction</a></li>
+        <li><a href="#2-related-work">2. Related Work</a></li>
+        <li><a href="#3-object-slam">3. Object SLAM</a></li>
+        <li><a href="#4-使用语义图结构的回环闭合">4. 使用语义图结构的回环闭合</a></li>
+        <li><a href="#5-experiment">5. Experiment</a></li>
+        <li><a href="#6-conclusion">6. Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <blockquote>
+<p><strong>面向更鲁棒闭环的拓扑可感的物体级语义建图</strong></p>
+<p>Lin S, Wang J, Xu M, et al. <a href="https://www.semanticscholar.org/paper/Topology-Aware-Object-Level-Semantic-Mapping-More-Lin-Wang/3701cbbfa25e954ce5cdf0c40cfa02fd9e745900">Topology Aware Object-Level Semantic Mapping Towards More Robust Loop Closure</a>[J]. IEEE Robotics and Automation Letters, 2021, 6(4): 7041-7048.（RAL 2021）</p>
+<p>中国科学技术大学自动化系 <a href="http://en.auto.ustc.edu.cn/">网页</a></p>
+</blockquote>
+<h2 id="thinking论文四问">【Thinking】论文四问</h2>
+<ul>
+<li>
+<h2 id="1font-colorred-针对什么问题font">1.<font color=red> 针对什么问题？</font></h2>
+</li>
+<li>
+<h2 id="2font-colorred-采用什么方法font">2.<font color=red> 采用什么方法？</font></h2>
+</li>
+<li>
+<h2 id="3font-colorred-达到什么效果font">3.<font color=red> 达到什么效果？</font></h2>
+</li>
+<li>
+<h2 id="4font-colorred-存在什么不足font">4.<font color=red> 存在什么不足？</font></h2>
+</li>
+</ul>
+<h2 id="0-摘要">0. 摘要</h2>
+<p>使用RGB-D相机，提出了一种新的基于物体建模和语义图结构匹配的回环闭合方法，物体级特征使用体素和长方体建立，并且环境被进一步表示为具有拓扑信息的语义图结构，在此基础上，提出了一种基于编辑距离的高级图结构匹配方法，实现鲁棒位置识别。最后使用语义地图的物体对齐进行回环校正。
+实验结果标明，该方法实现了无视点约束的全向闭环，相比基于环境外观的方法，有较强的鲁棒性。</p>
+<hr>
+<h2 id="1-introduction">1. Introduction</h2>
+<ul>
+<li>
+<p>人类基于环境物体布局来识别环境，在短时间内判断当前环境是否熟悉，受此启发，提出一种基于拓扑感知的物体级语义建图的闭环方法，能够实现大视点变化观察同一场景时，检测闭环并进行匹配和对齐。贡献如下：</p>
+<ul>
+<li>提出由地图点、体素和长方体组成的多粒度语义建图框架。</li>
+</ul>
+</li>
+<li>
+<p>提取物体的语义、大小、颜色分布和拓扑等多个信息作为描述符，实现物体间精确关联。</p>
+<ul>
+<li>一种基于<font color=red><strong>语义图结构匹配的回环检测</strong></font>方法，对视点和场景外观的变化具有鲁棒性</li>
+</ul>
+</li>
+<li>
+<p>一种基于物体对齐的回环校正方法，可以精确计算漂移误差</p>
+</li>
+</ul>
+<hr>
+<h2 id="2-related-work">2. Related Work</h2>
+<ul>
+<li>
+<p><strong>A. 物体SLAM</strong></p>
+<ul>
+<li>随着深度学习快速发展，机器人环境感知能力得到显著提高[7][8]。先验模型，简单模型。[7-14]</li>
+</ul>
+</li>
+<li>
+<p><strong>B. 回环闭合</strong></p>
+<ul>
+<li>
+<p>有些研究从图像中抽取局部特征，如SIFT[15]、ORB[5]等作为图像的抽象描述。或从整个图像提取全局特征，如GIST[16]，来实现场景描述。也有方法从图像多个局部区域提取全局特征，形成地点的鲁棒表示[17]。[10]中首次提出使用物体实现视图不变性的回环闭合。</p>
+</li>
+<li>
+<p>为了应对场景遮挡、布局变化、重复对象等因素，提取语义、颜色、拓扑等物体的各种信息，以实现物体的精准匹配和闭环检测。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="3-object-slam">3. Object SLAM</h2>
+<ul>
+<li>
+<p>RGB-D为输入，基于ORB-SLAM2实现初步位姿估计和稀疏建图，在此基础上融合RGB-D数据与实例分割，构建稠密点云生成体素模型，进而用离散采样和粒子群优化算法生成物体的紧凑长方体模型，</p>
+</li>
+<li>
+<p><strong>A. 体素模型重建</strong></p>
+</li>
+<li>
+<p><strong>B. 长方体生成</strong></p>
+</li>
+<li>
+<p><strong>C. 数据关联</strong></p>
+<ul>
+<li>
+<p>提取物体的各种信息作为描述符，以实现精准匹配：</p>
+<ul>
+<li>
+<p>大小：物体间大小差小于平均值的1/3时，认为匹配成功</p>
+</li>
+<li>
+<p>颜色：将物体图像转换成HSV颜色空间，然后计算待匹配图像的颜色直方图，形成归一化特征向量，相关系数大于0.5时，认为匹配成功</p>
+</li>
+<li>
+<p>拓扑：使用随机游走符描述符[21]提取物体领域拓扑信息，匹配阈值设置为实验中探索次数的0.5倍。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="4-使用语义图结构的回环闭合">4. 使用语义图结构的回环闭合</h2>
+<ul>
+<li>
+<p>A. 图结构表示</p>
+<ul>
+<li>
+<p>物体抽象为顶点，坐标为物体中心，定义物体的包络球面为相邻空间，相邻空间内有交集的节点使用无向边连接，另外遍历每个节点与其最近节点无向连接。</p>
+</li>
+<li>
+<p>将图结构信息嵌入线性向量空间，选取一个边缘节点作为根节点，测量其到其他节点的距离，根据距离对所有节点进行升序排列，得到支持向量{v1,v2,&hellip;,vn}，支持向量中的每个元素又由节点物体的大小、颜色、语义、随机游走描述符组成。</p>
+</li>
+<li>
+<p>通过替换根节点并重复操作，可以提取多个支持向量。</p>
+<ul>
+<li>
+<img src="https://api2.mubu.com/v3/document_image/513cc352-c76f-4c29-ba6f-7cff3f71d6b2-5321924.jpg" alt="img" style="zoom:50%;" />
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>B. 回环检测</p>
+<ul>
+<li>
+<p>定义了编辑操作（插入、删除、单节点替换、向量节点转置）和最小编辑次数。</p>
+</li>
+<li>
+<p>除了拓扑外，还考虑了两个地图中匹配物体间的空间距离一致性，共享同一节点的向量的节点间距离超过一个阈值距离时，不认为匹配。</p>
+</li>
+<li>
+<p>支持向量的编辑距离满足一定约束，则认为是一个回环。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>C. 回环校正
+$$
+e\left(O_{a i}, O_{b i}\right)=\left[\log \left(\left(T_{c}^{\prime}\right)^{-1} T_{c} T_{a i} T_{b i}^{-1}\right)<em>{\mathfrak{s e} 3}^{\vee} \quad \mathbf{d}</em>{a i}-\mathbf{d}_{b i}\right]
+$$</p>
+</li>
+</ul>
+<hr>
+<h2 id="5-experiment">5. Experiment</h2>
+<ul>
+<li>A. 数据集</li>
+<li>B. 语义建图表现</li>
+<li>C. 回环检测表现</li>
+<li>D. 定位准确度</li>
+<li>E. 时间分析</li>
+</ul>
+<hr>
+<h2 id="6-conclusion">6. Conclusion</h2>
+<ul>
+<li>本文提出了一种新颖的全向回环闭合方法，利用语义地标、语义图结构匹配和物体级对齐来实现漂移校正，但是RGB-D相机测量范围受限，不能扩展到户外环境。</li>
+<li>作者计划通过激光雷达将该方法扩展到户外，并探索物体级建图对于提高里程计测量性能和其他机器人任务的潜力。</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">lijian</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-05-31
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/loop-closure/">loop closure</a>
+          <a href="/tags/object/">object</a>
+          </div>
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="massif_li@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/GetOverMassif" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>li</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script type="text/javascript" async src="/lib/mathjax/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -10,7 +10,7 @@ weight: 50
 
 ​		机器人技术专业在读硕士研究生，感兴趣方向为视觉SLAM。
 
-​		E-mail : massif_li@qq.com   Github : [GetOverMassif](https://github.com/GetOverMassif)   知乎 : [zhihu](https://www.zhihu.com/people/shan-qiu-38-3)   CSDN : [Massif_Li](https://blog.csdn.net/lj164567487?spm=1010.2135.3001.5343)
+​		E-mail：massif_li@qq.com  Github：[GetOverMassif](https://github.com/GetOverMassif)  知乎：[山丘](https://www.zhihu.com/people/shan-qiu-38-3)  CSDN  [Massif_Li](https://blog.csdn.net/lj164567487?spm=1010.2135.3001.5343)  
 
 **关于博客**
 
@@ -18,5 +18,9 @@ weight: 50
 
 **参考资源**
 
-​		hugo模板 [even](https://github.com/olOwOlo/hugo-theme-even)，[Demo页面](https://hugo-theme-even.netlify.app/)，Learn more and contribute on [GitHub](https://github.com/gohugoio).
+​		hugo模板 [even](https://github.com/olOwOlo/hugo-theme-even)，[Demo页面](https://hugo-theme-even.netlify.app/)
+
+【后面仅为普通官网链接，方便博主自访】
+
+[幕布](https://mubu.com/app)  [印象笔记](https://app.yinxiang.com/Home.action#n=15f9d914-18c6-4fe5-bbf0-91eaa833e026&s=s28&ses=4&sh=2&sds=5&)  [豆瓣](https://www.douban.com/)  [bilibili](https://www.bilibili.com/)
 

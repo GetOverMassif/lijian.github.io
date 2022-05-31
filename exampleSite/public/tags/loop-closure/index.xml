@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>loop closure on 小李的博客</title>
+    <link>http://localhost:1313/tags/loop-closure/</link>
+    <description>Recent content in loop closure on 小李的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 31 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/loop-closure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📜论文阅读 | 面向更鲁棒闭环的拓扑可感的物体级语义建图</title>
+      <link>http://localhost:1313/post/2022-05-31-object-topology-loop-closure/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-05-31-object-topology-loop-closure/</guid>
+      <description>面向更鲁棒闭环的拓扑可感的物体级语义建图 Lin S, Wang J, Xu M, et al. Topology Aware Object-Level Semantic Mapping Towards More Robust Loop Closure[J]. IEEE Robotics and Automation Letters, 2021, 6(4): 7041-7048.（RAL 2021） 中国科学技术</description>
+    </item>
+    
+  </channel>
+</rss>
