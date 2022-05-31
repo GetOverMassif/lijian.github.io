@@ -1,7 +1,7 @@
 ---
 title: "📜论文阅读 | "
-date: 2022-05-31T01:37:56+08:00
-lastmod: 2022-05-31T01:37:56+08:00
+date: 2022-05-31
+lastmod: 2022-05-31
 draft: true
 tags: ["scene graph", "loop closure"]
 categories: ["slam", "论文阅读"]
