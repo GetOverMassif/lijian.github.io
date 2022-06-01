@@ -2,7 +2,7 @@
 title: "📜论文阅读 | 多物体场景中基于图结构匹配的语义闭环检测"
 date: 2022-06-01
 lastmod: 2022-06-01
-draft: true
+draft: false
 tags: ["object", "loop closure"]
 categories: ["slam", "论文阅读"]
 author: "lijian"
