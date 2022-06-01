@@ -20,7 +20,13 @@ weight: 50
 
 ​		hugo模板 [even](https://github.com/olOwOlo/hugo-theme-even)，[Demo页面](https://hugo-theme-even.netlify.app/)
 
-【后面仅为普通官网链接，方便博主自访】
+**常用主页**
 
-[幕布](https://mubu.com/app)  [印象笔记](https://app.yinxiang.com/Home.action#n=15f9d914-18c6-4fe5-bbf0-91eaa833e026&s=s28&ses=4&sh=2&sds=5&)  [豆瓣](https://www.douban.com/)  [bilibili](https://www.bilibili.com/)
+[幕布](https://mubu.com/app)  [印象笔记](https://app.yinxiang.com/Home.action#n=15f9d914-18c6-4fe5-bbf0-91eaa833e026&s=s28&ses=4&sh=2&sds=5&)  [豆瓣](https://www.douban.com/)  [bilibili](https://www.bilibili.com/)  [坚果云](https://www.jianguoyun.com/d/home#/)  gitbook
+
+**文献工具**
+
+[semantic scholar](https://www.mendeley.com/search/)  [谷歌学术镜像](http://scholar.scqylaw.com/)  [Connected Papers](https://www.connectedpapers.com/)  [企鹅论文](https://doi.qqsci.com/)  [sci-hub](https://sci-hub.ren/)  [Mendeley Search](https://www.mendeley.com/search/)  [百度学术](https://xueshu.baidu.com/)  [中国知网](https://www.baidu.com/link?url=_o1wvwiN2XVkNBO6D7xNhNCCYt4Kfcu_lLwIzl81gKW&wd=&eqid=81cdb0b30000b9ae000000036296da31)
+
+
 
